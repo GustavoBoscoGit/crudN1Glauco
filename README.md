@@ -54,4 +54,3 @@ Git blame: O comando “git blame” serve para examinar o conteúdo linha por l
 
 Em caso de dois usuários encontrarem um problema que atinge ambos, mesmo em branches diferentes, e um deles fazer a correção, você não pode fazer o merge, você precisará da correção. É nesse momento que utilizamos o "git cherry pick", onde é possível pegar um commit e copiá-lo de uma branch para outra. Para isso, deve-se pegar o identificador da branch corrigida(esse identificador é um ID da sua branch, com misturas sequencial de números e letras), para copiá-la a sua branch. Seria nesse sentido: "git checkout nomeBranchCorrigida", depois utilize execute o "git log" para encontrar o ID do commit e copiá-la, e assim, volte para sua branch e execute "git cherry pick idBranch". 
 
-git cherry-pick [--edit] [-n] [-m <parent-number>] [-s] [-x] [--ff] [-S[<keyid>]] <commit>…​git cherry-pick (--continue | --skip | --abort | --quit)
